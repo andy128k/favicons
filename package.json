@@ -16,6 +16,7 @@
     "pretest": "npm run lint",
     "test-only": "ava --require @babel/register test/**/*.test.js",
     "test": "npm run test-only",
+    "test:mutation": "stryker run",
     "coverage": "nyc npm test",
     "prepare": "gulp"
   },
@@ -55,6 +56,10 @@
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
     "@babel/register": "^7.0.0",
+    "@stryker-mutator/babel-transpiler": "^1.1.1",
+    "@stryker-mutator/core": "^1.1.1",
+    "@stryker-mutator/html-reporter": "^1.1.1",
+    "@stryker-mutator/javascript-mutator": "^1.1.1",
     "ava": "^1.2.1",
     "babel-plugin-istanbul": "^5.1.0",
     "concordance-comparator": "^0.1.0",
@@ -68,6 +73,7 @@
     "gulp-eslint": "^5.0.0",
     "nyc": "^13.1.0",
     "prettier": "^1.15.2",
-    "resemblejs": "^3.0.0"
+    "resemblejs": "^3.0.0",
+    "stryker-cli": "^1.0.0"
   }
 }
